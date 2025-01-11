@@ -110,7 +110,7 @@ export const validateSynthLang = (code: string): string[] => {
     }
 
     // Parse operations with new format, including arrows, annotations, and brackets
-    const operationRegex = /^([↹⊕Σ])\s+([a-zA-Z0-9_]+)(?:\s+"([^"]*)")?(?:\s+(?:@[a-zA-Z0-9_]+|\^[a-zA-Z0-9_]+(?:\s+\^[a-zA-Z0-9_]+)*|\[[^\]]+\]|\{[^}]+\}|\→\s*\w+|\⇒\s*\{[^}]+\}|\→|\⇒|\⊗|\≡|\||)*)*$/;
+    const operationRegex = /^([↹⊕Σ])\s+([a-zA-Z0-9_]+)(?:\s+"([^"]*)")?(?:\s+(?:@[a-zA-Z0-9_]+|\^[a-zA-Z0-9_]+(?:\s+\^[a-zA-Z0-9_]+)*|\[[^\]]+\]|\{[^}]+\}|\→\s*\w+|\⇒\s*\{[^}]+\}|\���|\⇒|\⊗|\≡|\|\|)*)*$/;
     const match = trimmed.match(operationRegex);
 
     if (!match) {
