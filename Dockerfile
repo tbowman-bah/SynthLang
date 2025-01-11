@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
 # Copy the built static files to nginx's serve directory
-COPY dist /usr/share/nginx/html
+# COPY dist /usr/share/nginx/html
 
 # Copy a custom nginx config if needed
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
