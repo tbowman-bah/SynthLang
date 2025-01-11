@@ -75,7 +75,7 @@ export const validateSynthLang = (code: string): string[] => {
         inMultilineContent = false;
         // Validate the complete multiline content
         const fullLine = multilineBuffer;
-        const match = fullLine.match(/^([↹⊕Σ])\s+([a-zA-Z0-9_]+)\s*"([^"]*)"(?:\s+(?:@[a-zA-Z0-9_]+|\^[a-zA-Z0-9_]+|\[[^\]]+\]|\{[^}]+\}|\→\s*\w+|\⇒\s*\{[^}]+\}|\→|\⇒|\⊗|\≡|\||)*)*$/);
+        const match = fullLine.match(/^([↹⊕Σ])\s+([a-zA-Z0-9_]+)\s*"([^"]*)"(?:\s+(?:@[a-zA-Z0-9_]+|\^[a-zA-Z0-9_]+|\[[^\]]+\]|\{[^}]+\}|\→\s*\w+|\⇒\s*\{[^}]+\}|\→|\⇒|\⊗|\≡|\|))*$/);
         if (!match) {
           errors.push(`Line ${multilineStartLine + 1}: Invalid format - must follow pattern: label "content" ^modifiers`);
         }
