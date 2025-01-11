@@ -23,7 +23,7 @@ rm -rf dist/* 2>/dev/null || true
 
 # Build the package
 echo -e "${YELLOW}Building package...${NC}"
-python -m build
+poetry build
 
 # Check if build was successful
 if [[ ! -d "dist" ]]; then
@@ -33,7 +33,7 @@ fi
 
 # Upload to PyPI
 echo -e "${YELLOW}Uploading to PyPI...${NC}"
-python -m twine upload dist/*
+poetry publish
 
 echo -e "${GREEN}Deployment completed successfully!${NC}"
 
