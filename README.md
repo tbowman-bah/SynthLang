@@ -129,6 +129,44 @@ npm run build
 npm run preview
 ```
 
+## CLI Tool
+
+SynthLang includes a powerful command-line interface for prompt engineering, framework translation, and optimization capabilities.
+
+### CLI Installation
+
+```bash
+pip install synthlang
+```
+
+### Basic Commands
+
+1. **Translate** - Convert natural language to SynthLang format:
+```bash
+synthlang translate --source "your prompt" --framework synthlang
+```
+
+2. **Optimize** - Improve prompt efficiency:
+```bash
+synthlang optimize "path/to/prompt.txt"
+```
+
+3. **Evolve** - Use genetic algorithms to improve prompts:
+```bash
+synthlang evolve "initial_prompt"
+```
+
+4. **Classify** - Analyze and categorize prompts:
+```bash
+synthlang classify "prompt_text"
+```
+
+For detailed documentation on CLI usage and features, see:
+- [Usage Guide](cli/docs/usage.md)
+- [Development Guide](cli/docs/development.md)
+- [Classification System](cli/docs/classification.md)
+- [Evolution System](cli/docs/evolution.md)
+
 ## Usage Guide
 
 ### Basic Prompt Generation
